@@ -1,0 +1,54 @@
+* {
+        
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgb(93, 163, 168);
+    font-family: 'calibri';
+    text-align: justify;
+}
+
+.row2col{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.row2col label{
+    background-color: black;
+    color: white;
+    text-align: right;
+    padding: 10px;
+}
+.row2col input,
+.row2col textarea{
+    background-color: turquoise;
+
+}
+@media screen and (max-width:600px) {
+  .row2col{
+      grid-template-columns: 1fr;
+  }  
+  .row2col label{
+ 
+    text-align: center;
+   
+}
+}
+input[type ="submit"]{
+background-color: darkgoldenrod;
+color: white;
+padding: 15px;
+text-align: right;
+
+}
+
+.grid_leftaside {
+    background-color: lightgray;
+    grid-column: 1;
+    grid-row: 2;
+    text-align: center;
+    margin: 5px;
+    padding: 25px;
+}

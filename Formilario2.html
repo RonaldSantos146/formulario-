@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DATOS PERSONALES</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+    </style>
+</head>
+<body>
+    <header>
+        <center><strong><h1>REGISTRO DE PERSONAL</h1></strong></center>
+        
+        <form action="">
+
+            <fieldset style="margin: 5px;">
+              <center> <legend>DATOS PERSONALES</legend></center> 
+
+              <div class="row2col">
+                  <label for="">Documento de indentificacion</label>
+                  <input type="number"
+                  id="IdDocumento"
+                  name="IdDocumento"
+                  required placeholder="id Solo numeros">
+              </div>
+              <div class="row2col">
+                <label for="idnombre">Nombre</label>
+                <input type="text"
+                id="nombre"
+                name="nombre"
+                required placeholder="Ingrese su nombre completo">
+            </div>
+
+            <div class="row2col">
+                <label for="idDireccion">Direccion</label>
+                <input type="text"
+                id="idDireccion"
+                name="idDireccion"
+                required placeholder="Ingrese su Direccion">
+            </div>
+            <div class="row2col">
+                <label for="idPais">Pais</label>
+                <select name="cmbpais" id="idPais"> required
+                    <option value="Guatemala">Guatemala</option>
+                    <option value="Mexico">Mexico</option>
+                    <option value="Brasil">Brasil</option>
+                </select>
+            </div>
+            <div class="row2col">
+                <label for="email">E-mail</label>
+                <input type="email"
+                id="email"
+                name="email"
+                placeholder ="Solo direcciones validas"
+            required>
+            </div>
+            <div class="row2col">
+                <label for="mensaje">Observaciones</label>
+             <textarea name="mensaje" 
+             id="mensaje" 
+              rows="10"required minlength="25"></textarea>
+            
+             </div>
+            </fieldset>
+            
+            <fieldset style="margin: 5px;">
+                
+                <center><legend>DATOS LABORALES</legend></center>
+                <div class="row2col">
+                <label for="idEmpresa">Empresa</label>
+                <input type="text"
+                id="idEmpresa"
+                name="idEmpresa"
+                required placeholder="Ingrese el nombre de la empresa">
+            </div>
+            <div class="row2col">
+                <label for="idSueldo">Sueldo Ordinario</label>
+                <input type="number" min="0" max="12000"
+                id="idSueldo"
+                name="idSueldo"
+                required placeholder="Ingrese valores numericos">
+            </div>
+            <div class="row2col">
+                <label for="idBonificacion">Bonificacion</label>
+                <input type="number" min="0" max="12000"
+                id="idBonificacion"
+                name="idBonificacion"
+                required placeholder="Ingrese valores numericos">
+            </div>
+            <div class="row2col">
+                <label for="idObonificacion">Otra Bonificacion</label>
+                <input type="number" min="0" max="12000"
+                id="idObonificacion"
+                name="idObonificacion"
+                required placeholder="Ingrese valores numericos">
+            </div>
+            <div> 
+                <input type="submit"value="Enviar Datos">
+           
+            </div>
+            </fieldset>
+
+        </form>
+    <aside class="grid_rightaside">
+        
+    </aside>
+    </header>
+</body>
+</html>
